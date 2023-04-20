@@ -1,0 +1,89 @@
+
+
+.intro{
+  position: relative;
+  &__bg {
+    width: 584px;
+    height: 799px;
+    background: url(../img/H_img.svg) no-repeat center / cover;
+    display: flex;
+    margin: 0 auto;
+  
+  }
+  &__title {
+    position: absolute;
+    top: 5px;
+    left: 464px;
+    text-align: center;
+    margin: 377px 0;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #ffffff;
+  }
+}
+
+.scroll {
+  position: absolute;
+  left: calc(50% - -46px / 2);
+  bottom: -150px;
+
+  &:hover{
+    fill: #f0145a;
+  }
+}
+
+
+.services {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+
+  &__titles {
+    border-right: 2px solid #b3b3ba;
+    padding-right: 60px;
+    margin: 15px 0;
+
+    a {
+      display: block;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      text-align: right;
+      color: #b3b3ba;
+      padding-bottom: 30px;
+      &:first-child {
+        background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      &:last-child{
+        padding-bottom: 0px;
+      }
+      &:hover{
+        color: #F0145A;
+      }
+    }
+  }
+  &__desc {
+    width: 581px;
+    margin: 43px 0 43px 60px;
+  }
+
+  &__desc-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+  }
+
+  &__desc-text {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}

@@ -3,6 +3,13 @@ body{
 }
 
 .center{
-  padding: 0 calc(50vw - 800px);
+  padding: 0 calc(50vw - 660px);
 }
+
+.background-wrapper{
+  background-image: var(--servisec-bg-gradient);
+}
+
+
+
 

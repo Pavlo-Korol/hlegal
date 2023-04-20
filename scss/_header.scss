@@ -1,11 +1,15 @@
 .header{
+    position: absolute;
+    left: 0;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #323264;
+    background-color: transparent;
     margin-top: 50px;
-    padding-bottom: 30px;
-
+    width: 100%;
+    z-index: 99;
+    
     &__menu-wrapper{
         display: flex;
         align-items: center;
@@ -15,8 +19,8 @@
     &__menu-facebook-link{
         margin-left: 18px;
 
-        &:hover{
-            color: #F0145A;
+        &:hover {
+        fill: #F0145A; 
         }
     }
 

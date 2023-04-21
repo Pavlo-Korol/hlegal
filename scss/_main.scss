@@ -73,7 +73,6 @@
   }
 
   &__desc-title {
-    font-weight: 700;
     font-size: 30px;
     line-height: 37px;
     color: #FFFFFF;
@@ -87,3 +86,68 @@
     color: #ffffff;
   }
 }
+
+.offers{
+
+  &__btn{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    background: transparent;
+    
+
+    &-wrapper{
+      display: inline-flex;
+      align-items: center;
+      margin-top: 60px;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      &:hover{
+        path{
+          stroke:#F0145A;
+        }
+        button{
+          color:#F0145A;
+        }
+      }
+    }
+    
+  }
+
+  &__title{
+
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 60px;
+  }
+
+  &__tiles{
+    display: grid;
+    grid-template-columns: 460px 460px 460px;
+    grid-template-rows: 381px 381px ;
+    &-item{
+      max-width: 400px;
+    }
+    &-title{
+      font-size: 22px;
+      line-height: 27px;
+      color: #24A3FF;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    &-desc{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFFFFF;
+    }
+  }
+}
+

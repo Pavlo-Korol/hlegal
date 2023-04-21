@@ -20,7 +20,10 @@
         margin-left: 18px;
 
         &:hover {
-        fill: #F0145A; 
+         path{
+            stroke: #F0145A;
+            fill: #F0145A;
+         }
         }
     }
 

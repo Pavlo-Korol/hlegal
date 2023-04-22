@@ -43,6 +43,7 @@ input ::-ms-clear {
 
 button {
     cursor: pointer;
+    background: transparent;
 }
 
 button ::-moz-focus-inner {

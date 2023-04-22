@@ -1,4 +1,12 @@
-
+.background-wrapper::before{
+  content: '';
+  width: 1400px;
+  height: 10px;
+  border-bottom: 1px solid #CACADB;
+  background-color: #CACADB;
+  border-radius: 12px;
+  color: #CACADB;
+}
 
 .intro{
   position: relative;
@@ -54,10 +62,7 @@
       color: #b3b3ba;
       padding-bottom: 30px;
       &:first-child {
-        background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        @extend %purple-title;
       }
       &:last-child{
         padding-bottom: 0px;
@@ -87,7 +92,7 @@
   }
 }
 
-.offers{
+.advantages{
 
   &__btn{
     font-weight: 700;
@@ -100,31 +105,17 @@
     
 
     &-wrapper{
-      display: inline-flex;
-      align-items: center;
+      
       margin-top: 60px;
       margin-bottom: 10px;
-      cursor: pointer;
-
-      &:hover{
-        path{
-          stroke:#F0145A;
-        }
-        button{
-          color:#F0145A;
-        }
-      }
+      
+      @extend %hover-blue-btn;
     }
     
   }
 
   &__title{
-
-  font-size: 38px;
-  line-height: 46px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  @extend %purple-title;
   margin-bottom: 60px;
   }
 
@@ -148,6 +139,146 @@
       line-height: 26px;
       color: #FFFFFF;
     }
+  }
+}
+
+.slider{
+  margin-top: 60px;
+
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn-wrapper{
+  @extend %hover-blue-btn
+  }
+
+  &__inner{
+    padding: 30px;
+    background-color: #EDEDF7;
+
+  }
+
+  &__btn{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    background: transparent;
+
+  }
+
+  &__title{
+    font-size: 38px;
+    line-height: 46px;
+    @extend %purple-title;
+    padding-top: 10px;
+  }
+
+  &__author{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+    padding-top: 30px;
+  }
+
+  &__jobtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B3B3BA;
+    padding-top: 10px;
+  }
+
+  &__switch-btn{
+
+    &-wrapper{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      gap: 15px;
+      margin-top: 30px;
+      padding-bottom: 60px;
+    }
+
+    width: 16px;
+    height: 16px;
+    background-color: #24A3FF;
+    opacity: 0.2;
+    border-radius: 50%;
+    display: inline-block;
+
+    &:hover,&:active{
+      opacity: 1;
+    }
+  }
+}
+
+.companies{
+
+  &__title{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(4,25fr);
+    grid-template-rows: repeat(3,120px);
+    
+    a{
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  .hillel{
+    background-color: #1C4280;
+  }
+  .wannabiz{
+    background-color: #143646;
+  }
+  .tapgerine{
+    background-color: #F48B30;
+  }
+  .dlook{
+    background-color: #9E4DC3;
+  }
+  .orangear{
+    background-color: #F48B30;
+  }
+  .adtelligent{
+    background-color: #E2E2E4;
+  }
+  .clickky{
+    background-color: #C71C36;
+  }
+  .ecoleasing{
+    background-color: #DCF3F9;
+  }
+  .infratek{
+    background-color: #EAEAEA;
+  }
+  .citypark{
+    background-color: #282240;
+  }
+  .artprint{
+    background-color: #1D4568;
+  }
+  .ultimatecard{
+    background-color: #000;
   }
 }
 

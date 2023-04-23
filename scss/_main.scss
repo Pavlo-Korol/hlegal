@@ -1,44 +1,63 @@
-.background-wrapper::before {
-  content: "";
-  width: 1400px;
-  height: 10px;
-  border-bottom: 1px solid #cacadb;
-  background-color: #cacadb;
-  border-radius: 12px;
-  color: #cacadb;
+.background-wrapper{
+  position: relative;
+  border-radius: 0px 0px 12px 12px;
+  &::before,
+  &::after {
+      content: '';
+      display: block;
+      float: left;
+      width: 95%;
+      height: 10px;
+      background-color: #CACADB;
+      border-radius: 0px 0px 12px 12px;
+      position: absolute;
+      bottom: -10px;
+  }
+  &::before {
+      width: calc(100% - 80px);
+      margin: 0 40px;
+      bottom: -20px;
+      background-color: #E7E7F2;
+  }
+  &::after {
+      width: calc(100% - 40px);
+      margin: 0 20px;
+  }
 }
 
 .intro {
-  position: relative;
-  &__bg {
-    width: 584px;
-    height: 799px;
-    background: url(../img/H_img.svg) no-repeat center / cover;
-    display: flex;
-    margin: 0 auto;
-  }
-  &__title {
-    position: absolute;
-    top: 5px;
-    left: 464px;
+    background: url(../img/H_img.svg) no-repeat center ;
     text-align: center;
-    margin: 377px 0;
-    font-weight: 700;
+    position: relative;
+
+  &__title{
+    margin: 0;
+    padding: 360px 0;
+    color: #fff;
     font-size: 38px;
-    line-height: 46px;
-    color: #ffffff;
-  }
-}
+    font-weight: 700;
+    }
 
-.scroll {
-  position: absolute;
-  left: calc(50% - -46px / 2);
-  bottom: -150px;
+    &__scroll{
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
 
-  &:hover {
-    fill: #f0145a;
+      &:hover{
+        a{
+          path{
+            stroke:#f0145a
+          }
+          circle{
+            stroke: #f0145a;
+          }
+        }
+
+      }
+    }
   }
-}
+
+
 
 .services {
   height: 100%;
@@ -263,11 +282,7 @@
 
   &__title {
     margin-bottom: 30px;
-    font-size: 38px;
-    line-height: 46px;
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @extend %purple-title;
   }
 
   &__tiles {

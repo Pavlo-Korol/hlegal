@@ -1,0 +1,111 @@
+footer {
+  background: #f5f5fa;
+
+}
+
+.footer {
+  border-top: 2px solid #b3b3ba;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__location {
+    display: flex;
+    justify-content: space-between;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+    &-address {
+      margin: 0;
+      color: #323264;
+    }
+    &-map {
+      margin: 0;
+      font-size: 12px;
+      position: relative;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #24a3ff;
+
+      &:hover {
+        color: #f0145a;
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        left: -16px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #b3b3ba;
+      }
+    }
+
+  }
+
+  &__rights {
+    margin: 0;
+    color: #b3b3ba;
+  }
+
+  &__links {
+    margin-top: 21px;
+    display: flex;
+    gap: 26px;
+    align-items: center;
+
+    &-facebook {
+      path {
+        fill: #24a3ff;
+      }
+    }
+
+    &-phone {
+      color: #46466e;
+    }
+
+    &-phone,
+    &-email {
+      text-transform: none;
+      font-size: 16px;
+      position: relative;
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        left: -16px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #b3b3ba;
+      }
+    }
+
+    &-email {
+      margin: 0;
+      font-size: 12px;
+      position: relative;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #24a3ff;
+      &:hover {
+        color: #f0145a;
+      }
+    }
+  }
+}

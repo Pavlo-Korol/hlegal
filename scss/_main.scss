@@ -76,7 +76,7 @@
       font-size: 38px;
       line-height: 46px;
       text-align: right;
-      color: #b3b3ba;
+      color: #8d8db4;
       padding-bottom: 30px;
       &:first-child {
         @extend %purple-title;
@@ -151,6 +151,14 @@
   &__wrapper {
     display: flex;
     justify-content: center;
+    
+  }
+
+  &__photo{
+    background: url(../img/photo.png) no-repeat center / cover;
+    width: 400px;
+    height: 352px;
+    border-radius: 12px 0px 0px 12px;
   }
 
   &__btn-wrapper {
@@ -159,6 +167,7 @@
 
   &__inner {
     padding: 30px;
+    max-width: 920px;
     background-color: #ededf7;
   }
 
@@ -210,6 +219,7 @@
 }
 
 .companies {
+  
   &__title {
     font-size: 14px;
     line-height: 17px;
@@ -222,6 +232,7 @@
 
   &__inner {
     display: grid;
+    
     grid-template-columns: repeat(4, 25fr);
     grid-template-rows: repeat(3, 120px);
 
@@ -290,6 +301,7 @@
     &-wrapper {
       display: flex;
       justify-content: space-between;
+      
     }
 
     &-inner {

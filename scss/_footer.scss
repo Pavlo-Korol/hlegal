@@ -67,6 +67,12 @@ footer {
       path {
         fill: #24a3ff;
       }
+
+      &:hover{
+        path {
+          fill:#f0145a;
+        }
+      }
     }
 
     &-phone {

@@ -1,126 +1,235 @@
 @media screen and (min-width: 1920px) and (max-width: 3500px) {
-
-    // global--
-    .center{
-      padding: 0 calc(50vw - 800px);
+  // global--
+  .center {
+    padding: 0 calc(50vw - 800px);
+  }
+  // main--
+  .intro {
+    background-size: 869px 1000px;
+    &__title {
+      padding-top: 450px;
+      padding-bottom: 500px;
     }
-    // main--
-    .intro{
-      background-size: 869px 1000px;
-      &__title{
-        padding-top: 450px;
-        padding-bottom: 500px;
+  }
+
+  .services__desc {
+    width: 861px;
+  }
+
+  .advantages__tiles {
+    grid-template-columns: repeat(3, 553px);
+  }
+
+  .publications {
+    padding-bottom: 30px;
+    &__tiles-inner {
+      width: 513px;
+      img {
+        width: 100%;
       }
     }
+  }
 
-    .services__desc{
-      width: 861px;
-    }
+  .companies {
+    margin: 0 100px;
+    margin-bottom: 60px;
+    &__inner {
+      grid-template-columns: repeat(4, 430px);
 
-    .advantages__tiles{
-      grid-template-columns: repeat(3,553px);
-    }
-
-    .publications{
-      padding-bottom: 30px;
-      &__tiles-inner{
-        width: 513px;
-        img{
-          width: 100%;
-        }         
+      .hillel {
+        border-top-left-radius: 12px;
+      }
+      .dlook {
+        border-top-right-radius: 12px;
+      }
+      .infratek {
+        border-bottom-left-radius: 12px;
+      }
+      .ultimatecard {
+        border-bottom-right-radius: 12px;
       }
     }
-
-    .companies{
-      margin: 0 100px;
-      margin-bottom: 60px;
-      &__inner{
-        grid-template-columns: repeat(4, 430px);
-
-        .hillel{
-          border-top-left-radius: 12px;
-        }
-        .dlook{
-          border-top-right-radius: 12px;
-        }
-        .infratek{
-          border-bottom-left-radius: 12px;
-        }
-        .ultimatecard{
-          border-bottom-right-radius: 12px;
-        }
-      }
-    }
+  }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1340px){
-  .center{
+@media screen and (min-width: 1024px) and (max-width: 1340px) {
+  .center {
     padding: 0 calc(50vw - 450px);
   }
 
-  .intro{
+  .intro {
     background-size: 500px 768px;
-    
-    &__title{
-      padding:320px 0;
+
+    &__title {
+      padding: 320px 0;
     }
-    &__scroll-link{
+    &__scroll-link {
       position: absolute;
       bottom: 30px;
     }
   }
 
-  .services{
+  .services {
     margin-top: 60px;
-    &__titles{
+    &__titles {
       padding-top: 15px;
       padding-bottom: 15px;
       padding-right: 50px;
     }
 
-    &__desc{
+    &__desc {
       width: 405px;
       margin: 0;
       margin-left: 50px;
       margin-top: 20px;
     }
-
   }
 
-  .advantages__tiles{
-    grid-template-columns: repeat(3,315px);
-    grid-template-rows: repeat(2,459px);
+  .advantages__tiles {
+    grid-template-columns: repeat(3, 315px);
+    grid-template-rows: repeat(2, 459px);
 
-    &-item{
+    &-item {
       padding-right: 60px;
 
-      &:nth-child(3),&:nth-child(6){
+      &:nth-child(3),
+      &:nth-child(6) {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .slider {
+    &__photo {
+      width: 400px;
+      height: 528px;
+    }
+
+    &__inner {
+      max-width: 504px;
+      padding: 30px 30px 20px 30px;
+    }
+  }
+
+  .publications {
+    padding-bottom: 30px;
+    &__tiles-inner {
+      width: 281px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding: 0 calc(50vw - 325px);
+  }
+
+  .header {
+    &__logo-link {
+      position: absolute;
+    }
+
+    &__menu-wrapper {
+      padding-bottom: 120px;
+    }
+
+    &__nav-list {
+      margin: 0;
+    }
+  }
+
+  .intro{
+    background-size:745.9px 1024px;
+    &__title{
+      padding: 489px 0;
+    }
+  }
+
+  .services{
+    display: block;
+
+    &__titles{
+      border: none;
+      display: flex;
+      gap: 30px;
+      white-space: none;
+      overflow: auto;
+      white-space: nowrap;
+      
+
+      &::-webkit-scrollbar{
+        height: 4px;
+      }
+      &::-webkit-scrollbar-track{
+        background-color:#b3b3ba;
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color:#626269;
+        border-radius: 4px;
+      }
+    }
+
+    &__desc{
+      margin: 0;
+      margin-top: 60px;
+    }
+  }
+
+  .advantages__tiles {
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows: repeat(3, 435px);
+
+    &-item {
+      padding-right: 60px;
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6) {
         padding-right: 0;
       }
     }
   }
 
   .slider{
-
+    &__wrapper{
+      display: block;
+    }
     &__photo{
-      width: 400px;
-      height: 528px;
+      width: 633px;
+      height: 500px;
+      border-radius: 12px 12px 0px 0px;
     }
 
+  }
+
+  .companies{
     &__inner{
-      max-width: 504px;
-      padding: 30px 30px 20px 30px ;
+      grid-template-columns: repeat(3, 25fr);
+      grid-template-rows: repeat(4, 120px);
     }
   }
 
   .publications{
-    padding-bottom: 30px;
-    &__tiles-inner{
-      width: 281px;
-      img{
-        width: 100%;
-      }         
+    &__tiles{
+      &-wrapper{
+        flex-wrap: wrap;
+      }
+      &-inner{
+        width: 309px;
+        img{
+          width: 100%;
+        }
+
+        &:last-child{
+        width: 648px;
+        margin-top: 30px;
+        }
+      }
+
     }
   }
-
 }
